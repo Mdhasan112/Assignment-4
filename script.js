@@ -60,8 +60,8 @@ function calculation() {
     const totalPrice = firstClassCount * 150 + economyClassCount * 100;
     document.getElementById('total-price').innerText = "$" + totalPrice
     vat = Math.round(totalPrice * 0.1);
-    document.getElementById('total-vat').innerText = vat;
+    document.getElementById('total-vat').innerText = "$" + vat;
 
     grandTotal = totalPrice + vat;
-    document.getElementById('grand-total').innerText = grandTotal;
+    document.getElementById('grand-total').innerText = "$" + grandTotal;
 }
